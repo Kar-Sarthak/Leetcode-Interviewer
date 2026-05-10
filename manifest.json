@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Side Panel",
+  "version": "1.0",
+  "description": "Adds AI chat with problem context to LeetCode.",
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://openrouter.ai/*"
+  ],
+  "permissions": []
+}
